@@ -81,3 +81,53 @@ class AudioDataset(Dataset):
         waveform, sr = torchaudio.load(self.file_paths[idx])
         return waveform, self.labels[idx]
 
+
+```
+
+Common Audio Features
+
+Mel Spectrogram
+
+Log-Mel Spectrogram
+
+MFCC
+
+Chroma
+
+Spectral Contrast
+
+🎯 Applications
+
+Music genre classification
+
+Speech emotion recognition
+
+Environmental sound classification
+
+Instrument detection
+
+Noise-robust audio classification
+
+⚙️ Best Practices
+
+Normalize audio
+
+Use fixed-duration clips (5–10 sec)
+
+Apply augmentation (noise, time shift, pitch shift)
+
+Convert spectrograms to log scale
+
+Use pretrained models for better performance
+
+📌 Future Improvements
+
+Add data augmentation
+
+Add pretrained models (AST / HTS-AT / BEATs)
+
+Use mixed precision training
+
+Implement early stopping
+
+Add model checkpoint saving
