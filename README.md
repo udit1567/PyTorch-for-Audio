@@ -84,50 +84,40 @@ class AudioDataset(Dataset):
 
 ```
 
-Common Audio Features
+## 📊 Common Audio Features
 
-Mel Spectrogram
+- Mel Spectrogram
+- Log-Mel Spectrogram
+- MFCC
+- Chroma
+- Spectral Contrast
 
-Log-Mel Spectrogram
 
-MFCC
+## 🎯 Applications
 
-Chroma
+- Music genre classification
+- Speech emotion recognition
+- Environmental sound classification
+- Instrument detection
+- Noise-robust audio classification
 
-Spectral Contrast
 
-🎯 Applications
+## ⚙️ Best Practices
 
-Music genre classification
+- Normalize audio before training
+- Use fixed-duration clips (5–10 seconds)
+- Apply data augmentation:
+  - Add background noise
+  - Time shifting
+  - Pitch shifting
+- Convert spectrograms to log scale
+- Use pretrained models for better performance
 
-Speech emotion recognition
 
-Environmental sound classification
+## 📌 Future Improvements
 
-Instrument detection
-
-Noise-robust audio classification
-
-⚙️ Best Practices
-
-Normalize audio
-
-Use fixed-duration clips (5–10 sec)
-
-Apply augmentation (noise, time shift, pitch shift)
-
-Convert spectrograms to log scale
-
-Use pretrained models for better performance
-
-📌 Future Improvements
-
-Add data augmentation
-
-Add pretrained models (AST / HTS-AT / BEATs)
-
-Use mixed precision training
-
-Implement early stopping
-
-Add model checkpoint saving
+- Add advanced data augmentation pipeline
+- Integrate pretrained models (AST / HTS-AT / BEATs)
+- Use mixed precision training (AMP)
+- Implement early stopping
+- Add model checkpoint saving
