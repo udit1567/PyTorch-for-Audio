@@ -25,6 +25,7 @@ Install dependencies:
 ```bash
 pip install torch torchaudio librosa numpy matplotlib
 
+
 📁 Project Structure
 
 project/
@@ -38,6 +39,7 @@ project/
 ├── train.py
 ├── inference.py
 └── README.md
+
 
 🔊 1. Loading Audio
 
